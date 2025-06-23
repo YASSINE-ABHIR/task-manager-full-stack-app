@@ -88,7 +88,7 @@ The backend will start on `http://localhost:8080`
 ```bash
 cd frontend/task-manager-frontend
 
-# Install dependencies
+# Install dependencies with (npm)
 pnpm install
 
 # Run tests
@@ -346,24 +346,27 @@ pnpm run build
 - **Accessibility**: ARIA labels and keyboard navigation support
 - **Dark Mode Ready**: CSS variables for easy theme switching
 
-
 ## Docker Setup
 
 ### Requirements:
+
 - Docker 20.10+
 - Docker Compose 2.0+
 
 ### Run Application:
+
 ```bash
-docker-compose up --build -d 
+docker-compose up --build -d
 ```
 
 ## 🐳 Docker Deployment
 
 ### Prerequisites
+
 - Docker installed on your system
 
 ### Quick Start
+
 ```bash
 # Clone the repository
 git clone https://github.com/YASSINE-ABHIR/task-manager-full-stack-app.git
@@ -400,7 +403,7 @@ crud-app/
 │   ├── nginx.conf             # Nginx config
 │   └── package.json          # npm configuration
 ├── database/
-│   └── schema.sql            # Database schema            
+│   └── schema.sql            # Database schema
 ├── README.md                  # This file
 ├── API_DOCUMENTATION.md       # API reference
 ├── DEPLOYMENT.md              # Deployment guide
@@ -413,8 +416,6 @@ crud-app/
 
 [Download Demo Video](docs/demo.mp4)
 (click in View raw)
-
-
 
 ## 🤝 Contributing
 
