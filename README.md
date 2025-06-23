@@ -412,6 +412,8 @@ crud-app/
 ## 🎥 Application Demo
 
 [Download Demo Video](docs/demo.mp4)
+(click in View raw)
+
 
 
 ## 🤝 Contributing
