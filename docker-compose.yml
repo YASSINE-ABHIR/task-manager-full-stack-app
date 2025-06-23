@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: taskmanager-db
+    environment:
+      POSTGRES_DB: taskmanager
+      POSTGRES_USER: taskmanager
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: taskmanager-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend/task-manager-frontend
+      dockerfile: Dockerfile
+    container_name: taskmanager-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

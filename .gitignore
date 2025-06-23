@@ -1,0 +1,14 @@
+# Node / React
+node_modules/
+frontend/node_modules/
+
+# Java / Spring Boot
+**/target/
+**/build/
+
+# VS Code
+.vscode/
+
+# OS noise
+.DS_Store
+Thumbs.db
