@@ -409,6 +409,11 @@ crud-app/
 
 ```
 
+## 🎥 Application Demo
+
+[Download Demo Video](docs/demo.mp4)
+
+
 ## 🤝 Contributing
 
 1. Fork the repository
